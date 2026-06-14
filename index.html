@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시네마 갤러리</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">🎬 시네마 갤러리</div>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="영화 검색...">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>이번 주 인기 영화</h1>
+            <p>최신 영화부터 클래식까지, 당신의 취향을 찾아보세요</p>
+        </section>
+        <section class="filter-section">
+            <button class="filter-btn active" data-genre="all">전체</button>
+            <button class="filter-btn" data-genre="action">액션</button>
+            <button class="filter-btn" data-genre="drama">드라마</button>
+            <button class="filter-btn" data-genre="comedy">코미디</button>
+            <button class="filter-btn" data-genre="sf">SF</button>
+            <button class="filter-btn" data-genre="horror">공포</button>
+        </section>
+        <section class="movies-grid" id="moviesGrid">
+            <!-- 영화 카드가 JavaScript로 삽입됩니다 -->
+        </section>
+    </main>
+    <!-- 영화 상세 모달 -->
+    <div class="modal" id="movieModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- 모달 내용이 JavaScript로 삽입됩니다 -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 시네마 갤러리. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
